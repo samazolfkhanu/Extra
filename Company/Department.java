@@ -2,9 +2,9 @@ package Company;
 
 enum Department
 {
-    IT,DESIGN,HR
+    IT,DESIGN,HR;
 
-    public Department search(String m)
+    public static Department search(String m)
     {
         for(Department d:Department.values())
         {

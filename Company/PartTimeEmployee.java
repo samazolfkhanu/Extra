@@ -1,12 +1,14 @@
 package Company;
 
-import ArrayList.InvalidInputException;
 
-public class PartTimeEmployee extends Employee
+import java.io.Serializable;
+
+public class PartTimeEmployee extends Employee implements Serializable
 {
     public PartTimeEmployee(String name,int id,Department d) throws InvalidInputException
     {
         super(name,id,d);
+        calculateSalary();
     }
 
     @Override

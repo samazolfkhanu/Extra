@@ -1,15 +1,20 @@
 package Company;
 
-import ArrayList.InvalidInputException;
 
-public class FullTimeEmployee extends Employee implements Benefit
+import java.io.Serializable;
+
+public class FullTimeEmployee extends Employee implements Benefit , Serializable
 {
     private int h;
     public FullTimeEmployee(String name,int id,int h,Department d) throws InvalidInputException
     {
         super(name,id,d);
         if(h>0)
+        {
             this.h=h;
+            calculateSalary();
+            getBenefits();
+        }
         else throw new InvalidInputException("invalid input!");
     }
 

@@ -1,8 +1,9 @@
 package Company;
 
-import ArrayList.InvalidInputException;
 
-abstract public class Employee
+import java.io.Serializable;
+
+abstract public class Employee implements Serializable
 {
     private int id;
     private String name;
