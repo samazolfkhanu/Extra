@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Ali",
+    "gpa": 18.3,
+    "courses": [
+      {"name": "Math", "grade": 19},
+      {"name": "OS", "grade": 17}
+    ]
+  },
+  {
+    "name": "Nima",
+    "gpa": 20,
+    "courses": [
+      {"name": "Math" , "grade": 20},
+      {"name": "ap","grade": 20}
+    ]
+  }
+]
