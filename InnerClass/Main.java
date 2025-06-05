@@ -4,8 +4,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Employee e=new Employee("sama",3);
-        Employee.Address a=e.new Address("NewYork");
-        System.out.println(e.toString()+"\n"+a.toString());
+        PaymentProcessor.CreditCardValidator c=new PaymentProcessor.CreditCardValidator();
+        System.out.println(c.validate(1234567890234567L));
     }
 }
