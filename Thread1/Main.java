@@ -4,9 +4,9 @@ public class Main
 {
     public static void main(String[] args)
     {
-        MyThread m=new MyThread();
-        MyThread m1=new MyThread();
-        m.start();
-        m1.start();
+        Thread t=new Thread(new Run());
+        Thread t1=new Thread(new Run());
+        t.start();
+        t1.start();
     }
 }
